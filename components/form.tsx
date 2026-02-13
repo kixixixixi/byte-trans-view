@@ -5,7 +5,9 @@ export const Input: FC<ComponentProps<"input">> = ({ style, ...props }) => (
     style={{
       background: "#333",
       border: 0,
+      flexGrow: 1,
       fontSize: "1.5rem",
+      minWidth: 0,
       outline: 0,
       padding: ".25rem .5rem",
       textAlign: "right",
@@ -23,6 +25,8 @@ export const Label: FC<ComponentProps<"label">> = ({
   <label
     htmlFor={htmlFor}
     style={{
+      fontSize: "1.5rem",
+      minWidth: "6rem",
       ...style,
     }}
     {...props}
@@ -32,10 +36,14 @@ export const Label: FC<ComponentProps<"label">> = ({
 export const Field: FC<ComponentProps<"fieldset">> = ({ style, ...props }) => (
   <fieldset
     style={{
-      border: "none",
+      alignItems: "center",
+      border: 0,
+      borderBottom: "solid 2px #333",
       display: "flex",
+      flexWrap: "wrap",
       gap: ".5rem",
       justifyContent: "space-between",
+      padding: "1rem",
       width: "100%",
       ...style,
     }}
@@ -50,6 +58,7 @@ export const Button: FC<ComponentProps<"button">> = ({ style, ...props }) => (
       border: 0,
       borderRadius: ".25rem",
       fontSize: "1.5rem",
+      minWidth: "6rem",
       padding: ".25rem 1rem",
       ...style,
     }}

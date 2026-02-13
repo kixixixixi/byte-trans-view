@@ -47,7 +47,7 @@ const Page: FC = () => {
     <>
       <Field>
         <Label htmlFor="binary">2進数</Label>
-        <div style={{ display: "flex", gap: ".5rem" }}>
+        <div style={{ display: "flex", flexGrow: 1, gap: ".5rem" }}>
           <Input
             id="binary"
             value={numberSet.binary}
@@ -60,7 +60,7 @@ const Page: FC = () => {
       </Field>
       <Field>
         <Label htmlFor="decimal">10進数</Label>
-        <div style={{ display: "flex", gap: ".5rem" }}>
+        <div style={{ display: "flex", flexGrow: 1, gap: ".5rem" }}>
           <Input
             id="decimal"
             value={numberSet.decimal}
@@ -73,7 +73,7 @@ const Page: FC = () => {
       </Field>
       <Field>
         <Label htmlFor="hexadecimal">16進数</Label>
-        <div style={{ display: "flex", gap: ".5rem" }}>
+        <div style={{ display: "flex", flexGrow: 1, gap: ".5rem" }}>
           <Input
             id="hexadecimal"
             value={numberSet.hexadecimal}
