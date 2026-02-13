@@ -1,8 +1,8 @@
 import "./reset.css"
 
 export const metadata = {
-  title: "Page title",
-  description: "Page description",
+  title: "バイト変換早見表",
+  description: "2進数・10進数・16進数を変換してバイトごとに分けて早見できる",
 }
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
@@ -23,7 +23,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
               margin: 0,
             }}
           >
-            Page title
+            バイト変換早見表
           </h1>
         </header>
         <main
@@ -43,7 +43,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
             padding: "1rem",
           }}
         >
-          <p>&copy; My organization</p>
+          <p>&copy; kixixixixi</p>
         </footer>
       </body>
     </html>
