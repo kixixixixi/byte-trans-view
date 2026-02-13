@@ -28,12 +28,22 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         </header>
         <main
           style={{
+            alignItems: "center",
             background: "#222",
+            display: "flex",
+            justifyContent: "center",
             minHeight: "calc(100dvh - 5.625rem)",
             padding: "1rem",
           }}
         >
-          {children}
+          <section
+            style={{
+              maxWidth: "64rem",
+              width: "100%",
+            }}
+          >
+            {children}
+          </section>
         </main>
         <footer
           style={{
