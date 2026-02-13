@@ -11,9 +11,9 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
       <body>
         <header
           style={{
-            backgroundColor: "#f9f9f9",
+            backgroundColor: "#333",
             boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-            padding: ".5rem",
+            padding: ".5rem 1rem",
             position: "relative",
           }}
         >
@@ -28,7 +28,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         </header>
         <main
           style={{
-            background: "#f0f0f0",
+            background: "#222",
             minHeight: "calc(100dvh - 5.625rem)",
             padding: "1rem",
           }}
@@ -37,7 +37,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         </main>
         <footer
           style={{
-            backgroundColor: "#f9f9f9",
+            backgroundColor: "#333",
             boxShadow: "0 -4px 6px rgba(0, 0, 0, 0.1)",
             fontSize: ".75rem",
             padding: "1rem",

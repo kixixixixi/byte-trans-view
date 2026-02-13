@@ -5,6 +5,7 @@
 }
 
 :root {
-  background: #f9f9f9;
-  color-scheme: light;
+  background: #333;
+  color: #f9f9f9;
+  color-scheme: dark;
 }
