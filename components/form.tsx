@@ -8,6 +8,7 @@ export const Input: FC<ComponentProps<"input">> = ({ style, ...props }) => (
       fontSize: "1.5rem",
       outline: 0,
       padding: ".25rem .5rem",
+      textAlign: "right",
       ...style,
     }}
     {...props}

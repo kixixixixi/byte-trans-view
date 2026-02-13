@@ -28,7 +28,7 @@ const Page: FC = () => {
 
   const transform = (from: keyof typeof parsers) => {
     const { pattern, parse, key } = parsers[from]
-    const value = numberSet[key as keyof typeof numberSet].replace(/\s/g, "")
+    const value = numberSet[key as keyof typeof numberSet]
     if (!pattern.test(value)) {
       alert("不正な値です")
       return
@@ -54,7 +54,6 @@ const Page: FC = () => {
             onChange={({ target: { value } }) =>
               setNumberSet({ ...numberSet, binary: value })
             }
-            style={{ textAlign: "right" }}
           />
           <Button onClick={() => transform("binary")}>変換</Button>
         </div>
@@ -68,7 +67,6 @@ const Page: FC = () => {
             onChange={({ target: { value } }) =>
               setNumberSet({ ...numberSet, decimal: value })
             }
-            style={{ textAlign: "right" }}
           />
           <Button onClick={() => transform("decimal")}>変換</Button>
         </div>
@@ -82,7 +80,6 @@ const Page: FC = () => {
             onChange={({ target: { value } }) =>
               setNumberSet({ ...numberSet, hexadecimal: value })
             }
-            style={{ textAlign: "right" }}
           />
           <Button onClick={() => transform("hexadecimal")}>変換</Button>
         </div>
