@@ -50,7 +50,6 @@ export const Button: FC<ComponentProps<"button">> = ({ style, ...props }) => (
       borderRadius: ".25rem",
       fontSize: "1.5rem",
       padding: ".25rem 1rem",
-      width: "100%",
       ...style,
     }}
     {...props}
